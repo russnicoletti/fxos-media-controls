@@ -1,0 +1,28 @@
+{
+  "name": "gaia-component",
+  "homepage": "https://github.com/fxos-components/gaia-component",
+  "main": "gaia-component.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "README.md",
+    "package.json",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "authors": [
+    "Wilson Page <wilsonpage@me.com>"
+  ],
+  "version": "0.6.0",
+  "_release": "0.6.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.6.0",
+    "commit": "b773a933e013f86abb8d22adc14a2db6f0d91b8a"
+  },
+  "_source": "git://github.com/fxos-components/gaia-component.git",
+  "_target": "~0.6.0",
+  "_originalSource": "fxos-components/gaia-component"
+}
