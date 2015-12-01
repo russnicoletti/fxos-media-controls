@@ -1,0 +1,44 @@
+{
+  "name": "fxos-media-controls",
+  "description": "Playback controls for audio or video elements",
+  "main": "fxos-media-controls.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/fxos-components/fxos-media-controls",
+  "license": "Apache 2.0",
+  "authors": [
+    "Justin D'Arcangelo <jdarcangelo@mozilla.com>"
+  ],
+  "devDependencies": {
+    "bower": "^1.5.2",
+    "chai": "3.4.1",
+    "jshint": "^2.8.0",
+    "karma": "0.13.15",
+    "karma-firefox-launcher": "0.1.7",
+    "karma-mocha": "^0.2.0",
+    "karma-sinon-chai": "1.1.0",
+    "marionette-client": "1.9.2",
+    "marionette-firefox-host": "1.0.4",
+    "marionette-helper": "0.3.2",
+    "marionette-js-runner": "1.1.3",
+    "mocha": "2.3.4",
+    "mozilla-download": "1.1.1",
+    "test-utils": "gaia-components/test-utils"
+  },
+  "scripts": {
+    "preinstall": "npm i socket-retry-connect json-wire-protocol sockit-to-me && ln -s node_modules/socket-retry-connect/ socket-retry-connect && ln -s node_modules/json-wire-protocol/ json-wire-protocol && ln -s node_modules/sockit-to-me/ sockit-to-me",
+    "install": "bower install",
+    "postinstall": "rm socket-retry-connect json-wire-protocol sockit-to-me",
+    "test-lint": "./node_modules/jshint/bin/jshint fxos-media-controls.js test/*.js",
+    "test-unit": "./node_modules/karma/bin/karma start test/karma.conf.js --single-run",
+    "test-integration": "./node_modules/.bin/marionette-mocha --reporter spec --host marionette-firefox-host --runtime $FIREFOX_NIGHTLY_BIN --timeout 6000s test/test-integration.js",
+    "test-unit-dev": "./node_modules/karma/bin/karma start test/karma.conf.js",
+    "test": "npm run test-lint && npm run test-unit && npm run test-integration"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fxos-components/fxos-media-controls.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fxos-components/fxos-media-controls/issues"
+  }
+}

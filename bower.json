@@ -1,0 +1,27 @@
+{
+  "name": "fxos-media-controls",
+  "description": "Playback controls for audio or video elements",
+  "main": "fxos-media-controls.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/fxos-components/fxos-media-controls",
+  "license": "Apache 2.0",
+  "authors": [
+    "Justin D'Arcangelo <jdarcangelo@mozilla.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "README.md",
+    "examples",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gaia-component": "fxos-components/gaia-component#~0.6.0",
+    "gaia-icons": "fxos-components/gaia-icons#~1.0.3"
+  },
+  "devDependencies": {
+    "gaia-theme": "fxos-components/gaia-theme#~0.5.1"
+  }
+}
