@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
   <title>fxos-media-controls</title>
 
-  <link rel="stylesheet" href="../../bower_components/gaia-icons/gaia-icons.css">
-  <link rel="stylesheet" href="../../bower_components/gaia-theme/gaia-theme.css">
+  <link rel="stylesheet" href="node_modules/fxos-icons/fxos-icons.css">
+  <link rel="stylesheet" href="node_modules/fxos-theme/fxos-theme.css">
   <link rel="stylesheet" href="app.css">
 
-  <script defer src="../../bower_components/gaia-component/gaia-component.js"></script>
-  <script defer src="../../fxos-media-controls.js"></script>
+  <script src="node_modules/fxos-component/fxos-component.js"></script>
+  <script src="node_modules/fxos-theme/lib/fxos-theme-selector.js"></script>
+  <script defer src="fxos-media-controls.js"></script>
   <script defer src="app.js"></script>
 </head>
-<body class="theme-media">
+<body>
+  <fxos-theme-selector></fxos-theme-selector>
   <fxos-media-controls id="controls"></fxos-media-controls>
 </body>
 </html>
