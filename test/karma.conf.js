@@ -17,7 +17,7 @@ module.exports = function(config) {
     },
 
     files: [
-      'bower_components/gaia-component/gaia-component.js',
+      'node_modules/fxos-component/fxos-component.js',
       'fxos-media-controls.js',
       'node_modules/test-utils/node_modules/axe-core/axe.min.js',
       'node_modules/test-utils/src/utils.js',
@@ -26,7 +26,6 @@ module.exports = function(config) {
     ],
 
     proxies: {
-      '/bower_components/': 'http://localhost:9876/base/bower_components/',
       '/node_modules/': 'http://localhost:9876/base/node_modules/'
     }
   });
