@@ -30,8 +30,6 @@
   },
   "scripts": {
     "start": "npm run -s watch & nws -p 8001 -d examples/simple -o",
-    "preinstall": "npm i socket-retry-connect json-wire-protocol sockit-to-me && ln -s node_modules/socket-retry-connect/ socket-retry-connect && ln -s node_modules/json-wire-protocol/ json-wire-protocol && ln -s node_modules/sockit-to-me/ sockit-to-me",
-    "postinstall": "rm socket-retry-connect json-wire-protocol sockit-to-me",
     "test-lint": "./node_modules/jshint/bin/jshint src/fxos-media-controls.js test/*.js",
     "test-unit": "./node_modules/karma/bin/karma start test/karma.conf.js --single-run",
     "test-integration": "./node_modules/.bin/marionette-mocha --reporter spec --host marionette-firefox-host --runtime $FIREFOX_NIGHTLY_BIN --timeout 6000s test/test-integration.js",

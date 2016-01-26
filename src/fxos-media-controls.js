@@ -170,6 +170,5 @@ module.exports = component.register('fxos-media-controls', {
     background: transparent;
   }
 </style>`
-
 });
 
