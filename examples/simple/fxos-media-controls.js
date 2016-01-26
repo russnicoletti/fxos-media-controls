@@ -1,0 +1,1 @@
+../../fxos-media-controls.js
